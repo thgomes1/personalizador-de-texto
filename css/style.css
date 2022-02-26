@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: nexaLight;
+    src: url(./fonts/NexaLight.otf);
+}
+@font-face {
+    font-family: nexaBold;
+    src: url(./fonts/NexaBold.otf);
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    padding-top: 20px;
+    background-color: black;
+}
+
+/*----CLASSES-TO-CENTER-ELEMENTS-----*/
+.cent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*----CLASSES-TO-CENTER-ELEMENTS-END-----*/
+
+/*------------MAIN-------------*/
+#mainContainer {
+    overflow: auto;
+    width: 1000px;
+    height: fit-content;
+    background-color: #062446;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+/*--------HEADER--------*/
+#headerContainer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #0084ff;
+    border-bottom: 2px solid #000000;
+    box-shadow: 2px 0px 10px 3px black;
+}
+#headerContainer h1 {
+    padding: 7px;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*--------CONTENT--------*/
+#contentContainer {
+    padding: 20px;
+    width: 100%;
+    height: 75%;
+    color: white;
+}
+
+/*----RESULT----*/
+#resultContainer {
+    width: 80%;
+    margin-bottom: 25px;
+    border: 3px solid #0084ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 2px black;
+}
+#resultContainer h1 {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    background-color: #0084ff;
+    border-bottom: 3px solid #0084ff;
+}
+#resultContainer #result {
+    text-align: center;
+    overflow: auto;
+    color: rgba(255, 255, 255, 0);
+    width: 100%;
+    line-height: 45px;
+    height: 45px;
+    font-size: 2rem;
+}
+/*----RESULT-END----*/
+
+/*----INSERT----*/
+#insertContainer {
+    width: 90%;
+    height: 100%;
+    background-color: #0084ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 2px black;
+}
+#insertContainer p {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+#insertContainer input {
+    font-size: 1.6rem;
+    width: 88%;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 2px 2px 5px 0px black;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 300px));
+    grid-template-rows: repeat(2, minmax(auto, 55px));
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px 50px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-bottom: 5px solid black;
+}
+#buttons table {
+    text-align: center;
+    width: 100%;
+}
+#buttons button {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    margin: 0px;
+    color: white;
+    background-color: #062446;
+    border: 0;
+    border-radius: 10px;
+    transition: 500ms;
+}
+#buttons button:hover {
+    background-color: #0447c5;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#buttons1 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 200px));
+    grid-template-rows: repeat(2, minmax(auto, 50px));
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 20px 50px;
+    width: 100%;
+    height: 100%;
+}
+#buttons1 table {
+    text-align: center;
+    width: 100%;
+}
+#buttons1 button {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #062446;
+    border: 0;
+    border-radius: 10px;
+    transition: 500ms;
+}
+#buttons1 button:hover {
+    background-color: #0447c5;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+/*----INSERT END----*/
+
+/*--------CONTENT-END--------*/
+
+/*--------FOOTER--------*/
+
+#footerByContent #by {
+    border: 2px solid #0084ff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+    font-size: 1.5rem;
+}
+#footerByContent #by:hover {
+    background-color: #369dfd;
+    cursor: pointer;
+}
+
+#footerGhContent {
+    margin: 10px;
+}
+#footerGhContent i {
+    font-size: 1.2rem;
+    margin: 0px 5px;
+    color: rgb(255, 255, 255);
+}
+#footerGhContent #gitHub {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*--------FOOTER-END--------*/
+
+/*----RIGHTS---*/
+#rightsContainer {
+    z-index: 5;
+    position: absolute;
+    visibility: hidden;
+    overflow: auto;
+    width: 70%;
+    height: 80%;
+}
+#rightsContent {
+    text-transform: uppercase;
+    opacity: 0%;
+    position: absolute;
+    top: 45%;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 3px 3px 20px 5px black;
+    border-radius: 10px;
+    background-color: #0084ff;
+    transition: 500ms;
+}
+/*----RIGHTS-END---*/
+
+@media (max-width: 1040px) {
+    * {
+        font-size: 55%;
+    }
+}
+@media (max-width: 900px) {
+    * {
+        font-size: 55%;
+    }
+    body {
+        padding: 0px;
+    }
+    #mainContainer {
+        border-radius: 0px;
+    }
+    #resultContainer {
+        width: 100%;
+    }
+    #insertContainer {
+        width: 100%;
+    }
+    #buttons {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1000px));
+        grid-template-rows: repeat(6, minmax(auto, 75px));
+        padding: 15px 20px;
+    }
+    #buttons1 {
+        grid-template-columns: repeat(2, minmax(auto, 1000px));
+        grid-template-rows: repeat(4, minmax(auto, 75px));
+        padding: 15px 20px;
+    }
+    #mainContainer {
+        width: fit-content;
+        height: fit-content;
+    }
+    #rightsDivContainer {
+        z-index: 5;
+        position: fixed;
+        top: 10%;
+        width: 100vw;
+        height: 80%;
+    }
+}
+@media (max-width: 580px) {
+    * {
+        font-size: 55%;
+    }
+    #resultContainer {
+        width: 100%;
+    }
+    #contentContainer {
+        padding: 20px;
+    }
+    #insertContainer {
+        width: 100%;
+    }
+    #buttons {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1000px));
+        grid-template-rows: repeat(6, minmax(auto, 75px));
+        padding: 15px 20px;
+    }
+    #buttons1 {
+        grid-template-columns: repeat(2, minmax(auto, 300px));
+        grid-template-rows: repeat(4, minmax(auto, 75px));
+        padding: 15px 20px;
+    }
+    #rightsContainer {
+        width: 270px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 360px) {
+    * {
+        font-size: 45%;
+    }
+    main {
+        padding: 5px;
+    }
+    #contentContainer {
+        padding: 15px;
+    }
+    #buttons {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1000px));
+        grid-template-rows: repeat(6, minmax(auto, 75px));
+        padding: 15px 5px;
+    }
+    #buttons1 {
+        grid-template-columns: repeat(2, minmax(auto, 300px));
+        grid-template-rows: repeat(4, minmax(auto, 75px));
+        padding: 15px 5px;
+    }
+    #rightsContainer {
+        width: 230px;
+        font-size: 3.1rem;
+    }
+}

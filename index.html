@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Changer 1.0</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Oswald:wght@300;400&family=Rubik&display=swap");
+        </style>
+    </head>
+
+    <body>
+        <main id="mainContainer" class="centColumn">
+            <header id="headerContainer">
+                <h1>personalizador de texto</h1>
+            </header>
+
+            <section id="contentContainer" class="centColumn">
+                <article id="resultContainer" class="centColumn">
+                    <h1>RESULTADO</h1>
+                    <p id="result">result</p>
+                </article>
+
+                <article id="insertContainer" class="centColumn">
+                    <p>INSIRA SEU TEXTO AQUI</p>
+                    <input id="textChange" oninput="changeResult(this)" type="text" />
+
+                    <aside id="buttons">
+                        <button onclick="smallFont()">FONTE PEQUENA</button>
+                        <button onclick="defaultText()">PADRÃO</button>
+                        <button onclick="biggerFont()">FONTE GRANDE</button>
+
+                        <button onclick="upperCase()">TEXTO MAIÚSCULO</button>
+                        <button onclick="lowerCase()">TEXTO MINÚSCULO</button>
+                        <button onclick="boldFont()">TEXTO EM NEGRITO</button>
+                    </aside>
+                    <aside id="buttons1">
+                        <button onclick="fontOne()">FONTE 1</button>
+                        <button onclick="fontTwo()">FONTE 2</button>
+                        <button onclick="fontThree()">FONTE 3</button>
+                        <button onclick="fontFour()">FONTE 4</button>
+
+                        <button onclick="colorRed()">
+                            COR VERMELHA
+                            <div style="color: red">VERMELHO</div>
+                        </button>
+                        <button onclick="colorBlue()">
+                            COR AZUL
+                            <div style="color: blue">AZUL</div>
+                        </button>
+                        <button onclick="colorGreen()">
+                            COR VERDE
+                            <div style="color: green">VERDE</div>
+                        </button>
+                        <button onclick="colorYellow()">
+                            COR AMARELA
+                            <div style="color: yellow">AMARELO</div>
+                        </button>
+                    </aside>
+                </article>
+            </section>
+
+            <footer id="footerContainer" class="centColumn">
+                <div id="footerByContent">
+                    <p id="by">by: Thiago Gomes</p>
+                </div>
+                <div id="footerGhContent">
+                    <a id="gitHub" href="https://github.com/thgomes1" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                </div>
+            </footer>
+        </main>
+
+        <div id="rightsContainer" class="centColumn">
+            <div id="rightsContent">
+                <p>Todos os direitos reservados para Thiago Gomes, 2022.</p>
+            </div>
+        </div>
+    </body>
+
+    <script src="./js/script.js"></script>
+</html>
