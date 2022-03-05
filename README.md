@@ -2,11 +2,26 @@
    PERSONALIZADOR DE TEXTO
 </h1>
 
+<p align="center">
+   <a href="https://www.linkedin.com/in/thiago-gomes-165ab722b/" >
+   <img alt="Thiago Gomes [Linkedin]" src="https://img.shields.io/badge/-ThiagoGomes-1E65CF?style=flat&logo=Linkedin&logoColor=white"/>
+   </a>
+   <a href="https://github.com/thgomes1/personalizador-de-texto/blob/main/LICENSE" >
+   <img alt="MIT-LICENSE" src="https://img.shields.io/github/license/thgomes1/personalizador-de-texto?color=rgb%2830%2C%20101%2C%20207%29"/>
+   </a>
+</p>
+
 <p>
 Uma página com o objetivo de personalizar o seu texto de maneira simples e básica para o usuário, projeto feito com o intuito de testar os conhecimentos obtidos em HTML, CSS e JS através do curso "CURSO DESENVOLVIMENTO WEB FULL STACK - PROGRAMADORBR".
 </p>
 
-# Demonstração 📷
+<p align="center">
+  <a href="#camera-demonstração">Demonstração</a>&nbsp;|&nbsp;
+  <a href="#computer-tecnologias">Tecnologias</a>&nbsp;|&nbsp;
+  <a href="#open_book-licença">Licença</a>
+</p>
+
+# :camera: Demonstração
 
 <table>
  <tr>
@@ -19,11 +34,15 @@ Uma página com o objetivo de personalizar o seu texto de maneira simples e bás
  </tr>
 </table>
 
-# Tecnologias 💻
+# :computer: Tecnologias
 
 -   <p>HTML5</p>
 -   <p>CSS3</p>
 -   <p>JAVASCRIPT</p>
+
+# :open_book: Licença
+
+Este projeto possui uma licença do tipo MIT. Cheque o arquivo [LICENSE](https://github.com/thgomes1/personalizador-de-texto/blob/main/LICENSE) para saber mais
 
 #
 
