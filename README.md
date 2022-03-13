@@ -34,6 +34,8 @@ Uma página com o objetivo de personalizar o seu texto de maneira simples e bás
  </tr>
 </table>
 
+<p align="center"><a href="https://thgomes1.github.io/personalizador-de-texto/">TESTE A PÁGINA AQUI</a></p>
+
 # :computer: Tecnologias
 
 -   <p>HTML5</p>
